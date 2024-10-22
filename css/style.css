@@ -358,8 +358,10 @@ button {
     background-color: transparent !important;
 }
 
-.logo {
-    width: 200px;
+.logo img {
+    width: 100%;  /* Make the logo responsive */
+    max-width: 200px;  /* Max width for larger screens */
+    height: auto;  /* Maintain aspect ratio */
 }
 
 .ml-auto,
