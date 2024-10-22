@@ -364,6 +364,12 @@ button {
     height: auto;  /* Maintain aspect ratio */
 }
 
+.logo img {
+    width: 100%;  /* Make the logo responsive */
+    max-width: 200px;  /* Max width for larger screens */
+    height: auto;  /* Maintain aspect ratio */
+}
+
 .ml-auto,
 .mx-auto {
     margin-left: auto!important;
@@ -372,6 +378,8 @@ button {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
     color: #FFE680;
     text-transform: uppercase;
@@ -468,10 +476,12 @@ button {
 }
 
 .banner_text {
+    border-left: 5px solid #fda417;
+    padding-left: 20px;
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #FFE689;
+    color: black;
     margin-left: 0px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold; /* This makes the text bold */
