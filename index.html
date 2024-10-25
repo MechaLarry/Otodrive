@@ -12,7 +12,7 @@
       <title>OTODRIVE</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
-      <meta name="author" content="">
+      <meta name="author" content="larrzonesolutions">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -31,69 +31,77 @@
    <body>
       <!-- header top section start -->
       <div class="header_top_section">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="header_top_main">
-                     <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +254-704-644-909</a></div>
-                     <div class="call_text_2"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> info@otodrive.co.ke</a></div>
-                     <div class="call_text_1"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> otodrive location</a></div>
-                  </div>
-               </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="header_top_main d-flex justify-content-between align-items-center">
+                    <!-- Navbar items (aligned left) -->
+                    <div class="navbar_items d-flex align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/website Logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="menu_items d-flex align-items-center">
+                            <!-- Desktop view items - Hide in mobile -->
+                            <div class="call_text"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></div>
+                            <div class="call_text_2"><a href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i> Services</a></div>
+                            <div class="call_text_1"><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></div>
+                            <div class="call_text"><a href="projects.html"><i class="fa fa-tasks" aria-hidden="true"></i> Projects</a></div>
+                            <div class="call_text_2"><a href="testimonial.html"><i class="fa fa-comments" aria-hidden="true"></i> Testimonial</a></div>
+                            <div class="call_text_1"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"> </i>&nbsp; </i><i class="fa fa-user" aria-hidden="true"></i> Contact Us</a></div>
+                        </div>
+                    </div>
+
+                    <!-- Contact info (aligned right) -->
+                    <div class="contact_info d-flex align-items-center">
+                        <div class="quote_btn"><a href="get-quote.html">GET A QUOTE</a></div>
+                        <div class="call_text"><a href="tel:+254704644909"><i class="fa fa-phone" aria-hidden="true"></i> +254-704-644-909</a></div>
+                        <div class="call_text_2"><a href="mailto:info@otodrive.co.ke"><i class="fa fa-envelope" aria-hidden="true"></i> info@otodrive.co.ke</a></div>
+                        <div class="call_text_1"><a href="maps.html"><i class="fa fa-map-marker" aria-hidden="true"></i> otodrive location</a></div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <!-- header top section start -->
-      <!-- header section start -->
-      <div class="header_section video">
-         <video autoplay muted loop>
-             <source src="images/lpgtech_conversion_movie.mp4" type="video/mp4">
-             Your browser does not support the video tag.
-         </video>
-         <div class="container-fluid">
-             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                 <div class="logo">
-                     <a href="index.html"><img src="images/website Logo.png" alt="Website Logo"></a>
-                 </div>
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                 </button>
-                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav ml-auto">
-                         <li class="nav-item active">
-                             <a class="nav-link" href="index.html">Home</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="services.html">Services</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="about.html">About</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="projects.html">Projects</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="blog.html">Blog</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="testimonial.html">Testimonial</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="contact.html">Contact Us</a>
-                         </li>
-                     </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                     <div class="login_text">
-                        <ul>
-                           <!-- <li><a href="#">Login</a></li> -->
-                           <!-- <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                     </div>
-                     <div class="quote_btn"><a href="get-quote.html">Get A Quote</a></div>
-                  </form>
-               </div>
-            </nav>
-         </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header Section Start -->
+<div class="header_section video">
+    <video autoplay muted loop>
+        <source src="../images/lpgtech_conversion_movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container-fluid" hidden="true">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonial.html">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+     
          <!-- banner section start -->
          <div class="banner_section layout_padding">
             <div id="my_slider" class="carousel slide" data-ride="carousel">
@@ -161,12 +169,14 @@
       </div>
       <!-- header section end -->
       <!-- services section start -->
+     
       <div class="services_section layout_padding">
+         <div style="margin-bottom: 50px;"></div>
          <div class="container-fluid">
             <div class="row">
                <div class="col-sm-12">
                   <h1 class="services_taital">Our Services</h1>
-                  <p class="services_text_1">We love supporting our customers by offer a variety of services</p>
+                  <p class="services_text_1">We love supporting our customers by offering a variety of services</p>
                </div>
             </div>
             <div class="services_section_2">
@@ -175,7 +185,7 @@
                      <div class="box_main">
                         <div class="service_img"><img src="images/Iconka-Home-Sweet-Home-Gas-Station.128.png"></div>
                         <h4 class="development_text">LPG fueling</h4>
-                        <p class="services_text">We offer LPG refueling and a customer loyalty program. Our LPG is competitively priced and ensures you save upto 40% over regular petrol. We enjoy seeing customers benefit from our excellent services provided as you refuel such as ensuring your car is operating at peak performance by checking your fluid levels and clearing your view by washing your windsscreen. Our loyalty program enables clients to get rewards from fueling with us and the testimonies speak for themselves. Here, we put alot of effort in ensuring you get the best out of our services. </p>
+                        <p class="services_text">We offer LPG refueling and a customer loyalty program. Our LPG is competitively priced and ensures you save upto 40% over regular petrol. </p>
                         <div class="readmore_bt"><a href="services.html">Read More</a></div>
                      </div>
                   </div>
@@ -183,7 +193,7 @@
                      <div class="box_main">
                         <div class="service_img"><img src="images/icon-2.png"></div>
                         <h4 class="development_text">Autogas System Installation</h4>
-                        <p class="services_text">We install Autogas system manufactured by the best manufacturers in the world.  In partnership with  global leading providers such as Westport Fuels (Italy) and LPGTech (Poland) of Autogas Systems, we are licensed by KEBS  to convert gasoline powered vehicles to run on LPG under our brand, OTODRIVE. We have the best technical team that will ensure your vehicle will attain the best milage while using the Autogas system and enjoy the benefits of having a hybrid fueling system. </p>
+                        <p class="services_text">We install Autogas system manufactured by the best manufacturers in the world.  In partnership with  global leading providers such as...</p>
                         <div class="readmore_bt"><a href="services.html">Read More</a></div>
                      </div>
                   </div>
@@ -191,7 +201,7 @@
                      <div class="box_main">
                         <div class="service_img"><img src="images/icon-3.png"></div>
                         <h4 class="development_text">Free Car Diagnosis</h4>
-                        <p class="services_text">Here at OtoDrive, we believe the customer should enjoy their new vehicle just as you would your mobile electronic devices. We realised its unfair to charge a client on tasks such as diagnosis since its their way of analysing how well their technology works and to find out if there's any issues with their autogas system. We offer free vehicle diagnosis and ensure the customer uses their vehicle in its best condition.   </p>
+                        <p class="services_text">Here at OtoDrive, we believe the customer should enjoy their new vehicle just as you would your mobile electronic devices. We realised...   </p>
                         <div class="readmore_bt"><a href="services.html">Read More</a></div>
                      </div>
                   </div>
@@ -199,7 +209,7 @@
                      <div class="box_main">
                         <div class="service_img"><img src="images/icon-4.png"></div>
                         <h4 class="development_text">Free LPG system check and service</h4>
-                        <p class="services_text">When in doubt, come get your kit checked out! We offer free LPG system check for all Autogas vehicles. Our company is dedicated to ensure all Autogas vehicles are safe on the roads. Traveling on a healthy car, cheap fuel and care free mood is what we aim for. We offer free LPG system check to ensure you can always know the condition of your vehicle and take the appropriate action when needed</p>
+                        <p class="services_text">When in doubt, come get your kit checked out! We offer free LPG system check for all Autogas vehicles. Our company is dedicated to ensure...</p>
                         <div class="readmore_bt"><a href="services.html">Read More</a></div>
                      </div>
                   </div>
@@ -226,8 +236,8 @@
                                  <img src="images/play-icon.png" id="playBtn" alt="Play Video">
                              </div>
                              <!-- Hidden video element -->
-                             <video id="aboutVideo" width="100%" height="auto" style="display: none;" controls>
-                                 <source src="images/lpgtech_conversion_movie.mp4" type="video/mp4">
+                             <video id="aboutVideo" width="100%" height="600px" style="display: none;" loop controls>
+                                 <source src="../images/LPG-Service.mp4" type="video/mp4">
                                  Your browser does not support the video tag.
                              </video>
                          </div>
@@ -499,15 +509,18 @@
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-md-6">
-                     <form action="send_email.php" method="POST">
+                     <form id="contactForm" action="send_email.php" method="POST">
                         <div class="mail_section_1">
-                           <input type="text" class="mail_text" placeholder="Name" name="Name" required>
-                           <input type="text" class="mail_text" placeholder="Phone Number" name="Phone_Number" required> 
-                           <input type="email" class="mail_text" placeholder="Email" name="Email" required>
-                           <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Message" required></textarea>
-                           <div class="send_bt" button type="submit" class="styled-button"><a href="info@otodrive.co.ke">SEND</a></div>
+                            <input type="text" class="mail_text" placeholder="Name" name="Name" required>
+                            <input type="text" class="mail_text" placeholder="Phone Number" name="Phone_Number" required>
+                            <input type="email" class="mail_text" placeholder="Email" name="Email" required>
+                            <textarea class="massage-bt" placeholder="Message" rows="5" name="message" required></textarea>
+                            <div class="send_bt">
+                                <button type="submit" class="styled-button">SEND</button>
+                            </div>
                         </div>
-                     </form>              
+                    </form>
+                                
                     </div>
                   <div class="col-md-6 padding_left_15">
                      <div class="contact_img"><img src="images/canopy 2.jpg"></div>
@@ -530,14 +543,14 @@
                   <div class="location_text">
                      <ul>
                         <li>
-                           <a href="#"><span class="padding_15"><i class="fa fa-mobile" aria-hidden="true"></i></span> <br>Call +254 704 644 909</a>
+                           <a href="tel:+254704644909"><span class="padding_15"><i class="fa fa-mobile" aria-hidden="true"></i></span> <br>Call +254 704 644 909</a>
                         </li>
                         <li class="active">
-                           <a href="#"><span class="padding_15"><i class="fa fa-envelope" aria-hidden="true"></i></span> <br>info@otodrive.co.ke</a>
+                           <a href="mailto:info@otodrive.co.ke"><span class="padding_15"><i class="fa fa-envelope" aria-hidden="true"></i></span> <br>info@otodrive.co.ke</a>
                         </li>
-                        <li>
+                        <!-- <li>
                            <a href="#"><span class="padding_15"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <br>Location</a>
-                        </li> 
+                        </li>  -->
                      </ul>
                   </div>
                </div>
@@ -574,16 +587,16 @@
             <div class="social_icon">
                <ul>
                   <li>
-                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     <a href="https://www.facebook.com/profile.php?id=61566117596915"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     <a href="https://x.com/OTODRIVE_KENYA"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                   </li>
-                  <li>
+                  <!-- <li>
                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                  </li>
+                  </li> -->
                   <li>
-                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.instagram.com/otodrivekenya/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </li>
                </ul>
             </div>
