@@ -253,70 +253,108 @@ button {
 
 
 /* header top section start */
-
+/* Header Section */
 .header_top_section {
-    width: 100%;
-    display: flex;
-    background-color: #07092f;
-    height: auto;
-    padding: 20px 0px;
+    background-color: #0a0a23;
+    padding: 0;
 }
 
 .header_top_main {
     display: flex;
-}
-
-.call_text {
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    float: left;
+    padding: 10px 0;
+}
+
+.navbar_items {
+    display: flex;
+    align-items: center; /* Align horizontally at the same level */
+}
+
+.menu_items {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.menu_items a {
+    color: #ffffff;
     font-size: 16px;
-    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.call_text a {
-    color: #ffffff;
-}
-
-.call_text a:hover {
+.menu_items a:hover {
     color: #fda417;
 }
 
-.call_text_1 {
-    width: 100%;
-    float: left;
+/* Contact Info */
+.contact_info {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Align items horizontally */
+}
+
+.contact_info a {
+    color: #ffffff;
     font-size: 16px;
-    color: #ffffff;
-    text-align: right;
+    text-decoration: none;
 }
 
-.call_text_1 a {
-    color: #ffffff;
-}
-
-.call_text_1 a:hover {
+.contact_info a:hover {
     color: #fda417;
 }
 
-.call_text_2 {
-    width: 100%;
-    float: left;
-    font-size: 16px;
+/* Button */
+.quote_btn a {
+    background-color: #fda417;
+    padding: 10px 25px;
+    border-radius: 20px;
     color: #ffffff;
-    text-align: right;
-    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
 }
 
-.call_text_2 a {
-    color: #ffffff;
+.quote_btn a:hover {
+    background-color: #e0891c;
 }
 
-.call_text_2 a:hover {
-    color: #fda417;
+/* Mobile view (Hamburger menu) */
+@media (max-width: 768px) {
+    .navbar_items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .menu_items {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .menu_items a {
+        font-size: 18px; /* Make the text larger */
+        font-weight: bold; /* Bold text */
+        padding: 15px; /* Increase padding for visibility */
+        display: block;
+        width: 100%; /* Ensure full width for easy clicking */
+        text-align: left;
+    }
+
+    .contact_info {
+        flex-direction: column; /* Stack the contact info vertically */
+        align-items: flex-start;
+    }
+
+    .quote_btn {
+        margin-bottom: 10px;
+    }
 }
 
-.padding_left_15 {
-    padding-left: 10px;
-}
 
 
 /* header top section end */
@@ -375,20 +413,27 @@ button {
     margin-left: auto!important;
 }
 
+/* .call_text{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px; 
+} */
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 18px;
-    color: #FFE680;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fda417;
+    color: gold;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -803,8 +848,9 @@ button {
 .image {
     display: block;
     width: 100%;
-    height: auto;
-    min-height: 310px;
+    height: auto; /* Allow images to maintain their original aspect ratio */
+    max-height: 300px; /* Set a maximum height to avoid large images */
+    object-fit: cover; /* Crop images to fit the container without distortion */
 }
 
 .overlay {
@@ -823,7 +869,14 @@ button {
 
 .container_main {
     position: relative;
-}
+    height: 300px;
+    min-height: 310px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px;
+    }
 
 .container_main:hover .overlay {
     opacity: 1;
