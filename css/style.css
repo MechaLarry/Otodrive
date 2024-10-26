@@ -355,6 +355,91 @@ button {
     }
 }
 
+ /* Base reset for margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container styling */
+.header_top_section {
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    color: white;
+}
+
+/* Mobile Navbar */
+.mobile-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+}
+
+/* Mobile menu icon styling */
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: gold;
+    position: fixed;  /* Keep the icon fixed on the screen */
+    top: 15px;       /* Position it near the top of the screen */
+    left: 15px;     /* Position it near the right edge of the screen */
+    z-index: 1000;   /* Ensure it stays on top of other content */
+}
+
+/* Mobile menu items */
+.menu-items {
+    display: none; /* Hidden initially */
+    position: fixed; /* Position the menu dynamically */
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #444;
+    width: 100%;
+    max-width: 250px; /* Limit the width of the menu */
+    top: 5px;
+    left: 10px;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding-top: 50px 0; /* Adjust as needed to prevent overlap with .menu-toggle */
+    z-index: 999; /* Ensure the menu stays on top of other content */
+}
+
+.menu-items a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-items a:hover {
+    background-color: #555;
+    color: #fda417;
+    padding-left: 15px;
+    paddind_bottom_0: 15px;
+    /* pointer: cursor; */
+}
+
+/* Mobile-only visibility */
+@media (max-width: 768px) {
+    .header_top_main {
+        display: none; /* Hide desktop navbar */
+    }
+    .mobile-navbar {
+        display: flex;
+    }
+}
 
 
 /* header top section end */
