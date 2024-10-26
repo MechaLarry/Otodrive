@@ -27,42 +27,87 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+       <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    </head>
    <body>
-      <!-- header top section start -->
-      <div class="header_top_section">
-         <div class="container-fluid">
-             <div class="row">
-                 <div class="col-sm-12">
-                     <div class="header_top_main d-flex justify-content-between align-items-center">
-                         <!-- Navbar items (aligned left) -->
-                         <div class="navbar_items d-flex align-items-center">
-                             <div class="logo">
-                                 <a href="index.html"><img src="images/website Logo.png" alt="Logo"></a>
-                             </div>
-                             <div class="menu_items d-flex align-items-center">
-                              <!-- Desktop view items - Hide in mobile -->
-                              <div class="call_text"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></div>
-                              <div class="call_text_2"><a href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i> Services</a></div>
-                              <div class="call_text_1"><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></div>
-                              <div class="call_text"><a href="projects.html"><i class="fa fa-tasks" aria-hidden="true"></i> Projects</a></div>
-                              <div class="call_text_2"><a href="testimonial.html"><i class="fa fa-comments" aria-hidden="true"></i> Testimonial</a></div>
-                              <div class="call_text_1"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"> </i>&nbsp; </i><i class="fa fa-user" aria-hidden="true"></i> Contact Us</a></div>
-                          </div>
-                         </div>
-     
-                         <!-- Contact info (aligned right) -->
-                         <div class="contact_info d-flex align-items-center">
-                             <div class="quote_btn"><a href="get-quote.html">GET A QUOTE</a></div>
-                             <div class="call_text"><a href="tel:+254704644909"><i class="fa fa-phone" aria-hidden="true"></i> +254-704-644-909</a></div>
-                             <div class="call_text_2"><a href="mailto:info@otodrive.co.ke"><i class="fa fa-envelope" aria-hidden="true"></i> info@otodrive.co.ke</a></div>
-                             <div class="call_text_1"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> otodrive location</a></div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
+  <!-- header top section start -->
+  <div class="header_top_section">
+   <div class="container-fluid">
+       <div class="row">
+           <div class="col-sm-12">
+               <div class="header_top_main d-flex justify-content-between align-items-center">
+                   <!-- Navbar items (aligned left) -->
+                   <div class="navbar_items d-flex align-items-center">
+                       <div class="logo">
+                           <a href="index.html"><img src="images/website Logo.png" alt="Logo"></a>
+                       </div>
+                       <div class="menu_items d-flex align-items-center">
+                           <!-- Desktop view items - Hide in mobile -->
+                           <div class="call_text"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></div>
+                           <div class="call_text_2"><a href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i> Services</a></div>
+                           <div class="call_text_1"><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></div>
+                           <div class="call_text"><a href="projects.html"><i class="fa fa-tasks" aria-hidden="true"></i> Projects</a></div>
+                           <div class="call_text_2"><a href="testimonial.html"><i class="fa fa-comments" aria-hidden="true"></i> Testimonial</a></div>
+                           <div class="call_text_1"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"> </i>&nbsp; </i><i class="fa fa-user" aria-hidden="true"></i> Contact Us</a></div>
+                       </div>
+                   </div>
+
+                   <!-- Contact info (aligned right) -->
+                   <div class="contact_info d-flex align-items-center">
+                       <div class="quote_btn"><a href="get-quote.html">GET A QUOTE</a></div>
+                       <div class="call_text"><a href="tel:+254704644909"><i class="fa fa-phone" aria-hidden="true"></i> +254-704-644-909</a></div>
+                       <div class="call_text_2"><a href="mailto:info@otodrive.co.ke"><i class="fa fa-envelope" aria-hidden="true"></i> info@otodrive.co.ke</a></div>
+                       <div class="call_text_1"><a href="maps.html"><i class="fa fa-map-marker" aria-hidden="true"></i> otodrive location</a></div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+ <!-- Mobile Navbar -->
+ <div class="mobile-navbar">
+  <!-- Logo -->
+  <!-- <div class="logo">
+      <a href="index.html"><img src="images/website Logo.png" alt="Logo"></a>
+  </div> -->
+
+  <!-- Menu Toggle Icon -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+  </div>
+</div>
+
+<!-- Menu Items for Mobile -->
+<div id="menuItems" class="menu-items">
+  <div class="logo">
+      <a href="index.html"><img src="images/website Logo.png" alt="Logo"></a>
+  </div>
+  <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+  <a href="services.html"><i class="fa fa-cogs" aria-hidden="true"></i> Services</a>
+  <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a>
+  <a href="projects.html"><i class="fa fa-tasks" aria-hidden="true"></i> Projects</a>
+  <a href="testimonial.html"><i class="fa fa-comments" aria-hidden="true"></i> Testimonial</a>
+  <a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i> Contact Us</a>
+</div>
+</div>
+
+<script>
+  const menu = document.getElementById('menuItems');
+  const menuToggle = document.querySelector('.menu-toggle');
+
+  function toggleMenu() {
+      // Toggle menu visibility
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  }
+
+  // Close menu when clicking outside of it
+  document.addEventListener('click', function(event) {
+      if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+          menu.style.display = 'none';
+      }
+  });
+</script>
       <!-- header section end -->
       <!-- testimonial section start -->
       <div class="testimonial_section layout_padding">
@@ -91,7 +136,7 @@
                         <div class="col-md-12">
                            <h1 class="testimonial_taital">Testimonial</h1>
                           <div class="testimonial_section_2">
-                              <h2 class="client_name_text">Violet M. - Athi River <span style="float: right;"><img src="images/quick-icon.png"></span></h2>
+                              <h2 class="client_name_text">Violet T. - Athi River <span style="float: right;"><img src="images/quick-icon.png"></span></h2>
                               <p class="textimonial_text">
 
 "The conversion to LPG has helped me enjoy driving without worrying about the cost. I was unsure at first, but the savings have been amazing. Plus, I feel great about using a cleaner fuel. My car runs beautifully, and I love knowing I'm making a sustainable choice!"</p>
